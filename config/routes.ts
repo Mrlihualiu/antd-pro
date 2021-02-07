@@ -54,32 +54,35 @@
                 name: '商品',
                 icon: 'crown',
                 // component: './Goods',
-                authority: ['admin'],
+                authority: ['admin', 'user'],
                 routes: [
                   {
                     path: '/goods/list',
                     name: '商品列表',
                     icon: 'smile',
                     component: './Goods/List',
-                    authority: ['admin'],
-                  }, {
+                    authority: ['admin', 'user'],
+                  },
+                  {
                     path: '/goods/add',
                     name: '添加商品',
                     icon: 'smile',
                     component: './Goods/Add',
-                    authority: ['admin'],
-                  }, {
+                    authority: ['admin', 'user'],
+                  },
+                  {
                     path: '/goods/Brand',
                     name: '商品分类',
                     icon: 'smile',
                     component: './Goods/Brand',
-                    authority: ['admin'],
-                  }, {
+                    authority: ['admin', 'user'],
+                  },
+                  {
                     path: '/goods/style',
                     name: '商品类型',
                     icon: 'smile',
                     component: './Goods/Style',
-                    authority: ['admin'],
+                    authority: ['admin', 'user'],
                   },
                 ],
               },
